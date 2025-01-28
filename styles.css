@@ -3,6 +3,7 @@
 }
 body {
     background-color: black;
+    font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif)), sans-serif;
 }
 
 header {
@@ -60,6 +61,7 @@ a {
     border-radius: 25px;
     display: inline-flex;
     width: 34vw; ;
+    font-weight: bold;
 }
 
 #magnifying-glass {
@@ -93,6 +95,12 @@ a {
     color: white;
 }
 
+.search-bar:hover {
+    background-color: #2a2a2a;
+    border: 1px solid gray
+    
+}
+
 #explore-button {
     font-size: 1.5rem;
     text-align: center;
@@ -114,21 +122,21 @@ a {
 
 .download-app-button, .registration-button, .login-button {
     margin: 15px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .login-button a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
 .right-buttons:visited, .right-buttons:link {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #7f7e7f;
 }
 
 .right-buttons:hover {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -147,14 +155,14 @@ a {
 }
 
 .login-button a:visited, .login-button a:link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
 }
 
 .login-button:hover{
     width: 13%;
     height: 49px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: black;
     cursor: pointer;
 }
