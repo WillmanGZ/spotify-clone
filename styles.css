@@ -195,7 +195,7 @@ a {
     flex-wrap: wrap;
     font-size: 0.9rem;
     font-weight: 100;
-    height: 30.5rem;
+    height: 30.7rem;
 }
 
 .scroll-section {
@@ -382,6 +382,7 @@ a {
     overflow-x: hidden;
     overflow-y: scroll;
     white-space: nowrap;
+    margin-bottom: 0.6%;
 }
 
 .main-section::-webkit-scrollbar {
@@ -479,4 +480,43 @@ section h2:hover, .show-more:hover {
     margin-top: 0;
     margin-left: 10px;
     color: #b3b3b3;
+}
+
+.free-spotify {
+    background: linear-gradient(90deg, rgba(174,41,150,1) 0%, rgba(80,153,245,1) 100%);
+    width: 100%;
+    height:62px;
+    color: white;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.free-spotify:hover{
+    cursor: pointer;
+}
+
+.free-spotify h4{
+margin-top: 1%;
+margin-bottom: 0;
+}
+
+.free-spotify p {
+    margin-top: 2px;
+}
+
+.sign-button {
+    margin-right: 25px;
+    margin-top: 7px;
+    border-radius: 20px;
+    height: 48px;
+    width: 190px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 0.95rem;
 }
