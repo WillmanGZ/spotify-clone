@@ -520,6 +520,16 @@ margin-bottom: 0;
     font-size: 0.95rem;
 }
 
+.sign-button:hover {
+    height: 49px;
+    width: 191px;
+    font-size: 1rem;
+}
+
+.sign-button:active {
+    background-color: #c7c6c6;
+}
+
 .footer {
     width: 100%;
     display: inline-flex;
