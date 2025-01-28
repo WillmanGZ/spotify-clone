@@ -1,3 +1,6 @@
+* {
+    transition: 0.1s;
+}
 body {
     background-color: black;
 }
@@ -15,6 +18,10 @@ img {
     object-fit: contain;
 }
 
+a {
+    text-decoration: none;
+}
+
 .spotify-logo {
     margin-top: 5px;
     margin-left: 1%;
@@ -27,13 +34,22 @@ img {
     height: 48px;
     background-color: #1e1f1e;
     border-radius: 100%;
-    margin-left: 26.5vw;
+    margin-left: 26.5%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.3rem;
 }
 
-.home-logo img {
-    width: 63%;
-    height: 63%;
-    margin: 8px;
+.home-logo:hover {
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+}
+
+.home-logo:active {
+    color: rgb(212, 212, 212);
+    background-color: #1a1b1a;
 }
 
 .search-bar {
@@ -52,12 +68,29 @@ img {
     margin: 12px;
 }
 
+#magnifying-glass:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#magnifying-glass:active {
+    color: #7f7e7f;
+    cursor: pointer;
+}
+
 #search-input {
     background-color: transparent;
     border: 0;
     height: 100%;
     width: 90%;
     font-size: 1.1rem;
+    color: white;
+    outline: none;
+}
+
+.search-bar:focus-within{
+    border: 2px solid white;
+    color: white;
 }
 
 #explore-button {
@@ -66,4 +99,73 @@ img {
     margin: 15px;
     margin-top: 12px;
     width: 10%;
+    color: #7f7e7f !important;
+}
+
+#explore-button:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+#explore-button:active {
+    color: #7f7e7f !important;
+    cursor: pointer;
+}
+
+.download-app-button, .registration-button, .login-button {
+    margin: 15px;
+    font-weight: 400;
+}
+
+.login-button a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.right-buttons:visited, .right-buttons:link {
+    font-size: 1rem;
+    color: #7f7e7f;
+}
+
+.right-buttons:hover {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.right-buttons:active {
+    color: #7f7e7f;
+}
+
+.login-button {
+    background-color: white;
+    border-radius: 30px;
+    width: 12%;
+    margin: 0;
+    height: 48px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.login-button a:visited, .login-button a:link {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.login-button:hover{
+    width: 13%;
+    height: 49px;
+    font-size: 1.3rem;
+    color: black;
+    cursor: pointer;
+}
+
+.login-button:active {
+    background-color: gainsboro;
+}
+
+.no-seleccionable { /*Para hacer que el usuario no pueda selecionar texto*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
