@@ -408,6 +408,7 @@ section h2 {
     margin-top: 1px;
     margin-bottom: 5px;
     z-index: 0;
+    width: 10px;
 }
 
 .show-more {
