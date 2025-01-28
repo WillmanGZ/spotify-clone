@@ -5,7 +5,9 @@
 body {
     background-color: black;
     font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif)), sans-serif;
-    overflow: -moz-hidden-unscrollable;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
 header {
@@ -366,4 +368,114 @@ a {
     font-size: 0.9rem;
     cursor: pointer;
     border: 1px solid #7f7e7f;
+}
+
+.main-section {
+    width: 66%;
+    height: 30.9rem;
+    background: linear-gradient(#222323 0%, #121212 50%);
+    border-radius: 10px;
+    margin-left: 0.6%;
+    padding: 0.1% 0.8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.main-section::-webkit-scrollbar {
+    display: none;
+}
+
+.main-section:hover::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    display: block;
+}
+
+.main-section:hover::-webkit-scrollbar-thumb{
+    height: 10px;
+    width: 10px;
+    background-color: rgba(91,91,90,255);
+    display: block;
+}
+
+section h2 {
+    color: white;
+    padding-left: 0.8%;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    z-index: 0;
+}
+
+.show-more {
+    margin-left: -100px;
+    color: #b3b3b3;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 50%;
+    z-index: 0;
+}
+
+section h2:hover, .show-more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 0px;
+    width: auto;
+    margin-bottom: 5%;
+}
+
+.card {
+    display: block;
+    background-color: transparent;
+    color: white;
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    text-wrap: wrap;
+    z-index: 1;
+}
+
+
+.card:hover {
+    background-color: #1e1f1e;
+    cursor: pointer;
+}
+
+.card:active {
+    background-color: black;
+}
+
+.card img {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.artist img{
+    border-radius: 100%;
+}
+
+.card h4 {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin-top: 0;
+    margin-left: 10px;
+    color: #b3b3b3;
 }
